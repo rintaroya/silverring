@@ -135,7 +135,7 @@ bookingBtn?.addEventListener("click", () => {
 
     const count = Number(peopleSelect.value) || 1;
 
-    emailjs.send("service_l9y5u34", "template_xyoatxq", {
+    emailjs.send("service_f3vtmgk", "template_yjiburw", {
         phone: phoneInput.value,
         tour_date: selectedDate,
         people_count: count,
