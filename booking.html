@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Питание и проживание</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+
+<header class="header" id="header">
+    <div class="container">
+        <div class="header__wrapper">
+
+            <a href="index.html" class="logo">
+                <img src="images/icon1.png" alt="Logo">
+            </a>
+
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Программа</a>
+                <a class="nav__link" href="food-accommodation.html">Питание и проживание</a>
+                <a class="nav__link" href="booking.html">Забронировать</a>
+            </nav>
+
+            <button class="burger" id="burger">☰</button>
+
+        </div>
+    </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Программа</a>
+    <a href="food-accommodation.html">Питание и проживание</a>
+    <a href="booking.html">Забронировать</a>
+</div>
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+
+<main class="booking-page">
+
+<section class="booking-section">
+  <div class="container">
+
+    <div class="booking-tour">
+
+      <div class="booking-gallery">
+        <div class="gallery">
+          <div class="gallery-track">
+            <img src="./images/Коломна/Коломенский кремль.jpg">
+            <img src="./images/Зарайск/Зарайский кремль.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-left">
+
+        <div class="booking-info">
+
+          <h1 class="booking-title">
+            Серебряное кольцо Подмосковья
+          </h1>
+
+          <div class="booking-meta">
+
+            <div>
+              <div class="booking-meta-label">Длительность</div>
+              <div class="booking-meta-value">3 дня / 2 ночи</div>
+            </div>
+
+            <div>
+              <div class="booking-meta-label">Маршрут</div>
+              <div class="booking-meta-value">
+                Москва – Коломна – Серпухов – Данки – Зарайск – Москва
+              </div>
+            </div>
+
+            <div>
+              <div class="booking-meta-label">Стоимость</div>
+              <div class="booking-price">от 23 200 ₽</div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="booking-dates">
+
+          <h3>Даты тура</h3>
+
+          <div id="datesGrid" class="dates-grid"></div>
+
+          <button id="expandDatesBtn" class="expand-dates">
+            Показать все даты
+          </button>
+
+        </div>
+
+      </div>
+
+        <aside class="booking-form-card">
+
+            <h2 class="booking-form-title">Забронировать</h2>
+
+            <div class="form-group">
+                <label>Дата</label>
+                <select id="tourDate" class="form-control"></select>
+            </div>
+
+            <div class="form-group">
+                <label>Телефон</label>
+                <input type="tel" class="form-control" placeholder="+7 999 999 99 99">
+                <div id="phoneError" class="phone-error"></div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="touristsCount">Количество туристов</label>
+
+            <select id="touristsCount">
+                <option value="1">1 человек</option>
+                <option value="2">2 человека</option>
+                <option value="3">3 человека</option>
+                <option value="4">4 человека</option>
+                <option value="5">5 человек</option>
+                <option value="6">6 человек</option>
+                <option value="7">7 человек</option>
+                <option value="8">8 человек</option>
+                <option value="9">9 человек</option>
+                <option value="10">10 человек</option>
+            </select>
+
+            </div>
+
+            <div class="booking-total">
+            <div>Итоговая стоимость</div>
+            <div id="totalPrice" class="booking-total-value">23 200 ₽</div>
+            </div>
+
+            <button class="booking-submit">Забронировать</button>
+
+        </aside>
+
+            </div>
+
+        </div>
+</section>
+
+</main>
+
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer__grid">
+
+            <div class="footer__block">
+                <p class="footer__title">РЕЕСТРОВЫЙ НОМЕР</p>
+                <p class="footer__value">РТО 000126</p>
+            </div>
+
+            <div class="footer__block">
+                <p class="footer__title">КОНТАКТЫ</p>
+                <p>Москва, ул. Бауманская, 22</p>
+                <p>Тел.: 8 (495) 229-52-88</p>
+                <p>Факс: 8 (499) 261-23-02</p>
+                <p>E-mail: mail@chinatravel.ru</p>
+            </div>
+
+        </div>
+
+        <div class="footer__bottom">
+            © 2000–2026 Туроператор China Travel. Все права защищены.
+            <br>
+            Информация о ценах, указанная на сайте, не является публичной офертой.
+        </div>
+
+    </div>
+</footer>
+
+<div class="booking-modal" id="bookingModal">
+    <div class="booking-modal-content">
+
+        <div class="booking-modal-icon">✓</div>
+
+        <h3>Бронирование оформлено</h3>
+
+        <p>
+            Благодарим за бронирование!
+            Наш менеджер свяжется с Вами
+            в течение 15 минут для уточнения деталей заказа.
+        </p>
+
+        <button id="closeBookingModal" class="booking-modal-btn">
+            Понятно
+        </button>
+
+    </div>
+</div>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "7yCMJTwLYlv70Z6rK",
+      });
+   })();
+</script>
+
+<script src="js/main.js"></script>
+<script src="js/booking.js"></script>
+
+</body>
+</html>

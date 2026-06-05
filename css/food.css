@@ -1,0 +1,392 @@
+.food-hero {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.food-hero h1 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.food-hero p {
+    color: #64748B;
+}
+
+.food-section {
+    padding: 40px 0 70px;
+}
+
+.food-section h2 {
+    margin-bottom: 24px;
+}
+
+
+.transport-card {
+    width: 100%;
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid #eef2f6;
+    padding: 24px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.transport-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.transport-icon {
+    font-size: 42px;
+    line-height: 1;
+}
+
+.transport-header h3 {
+    margin-bottom: 4px;
+}
+
+.transport-subtitle {
+    color: #94A3B8;
+    font-size: 14px;
+}
+
+.transport-features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.transport-feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #F8FAFC;
+    border: 1px solid #EEF2F6;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.transport-feature span {
+    font-size: 22px;
+}
+
+.transport-feature p {
+    margin: 0;
+}
+
+.transport-description {
+    margin-top: 0;
+}
+
+.transport-description p {
+    line-height: 1.7;
+}
+
+.hotels-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.hotel-card {
+    background: #fff;
+    border-radius: 14px;
+    border: 1px solid #eef2f6;
+    padding: 24px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.hotel-night {
+    font-size: 13px;
+    color: #0EA5A4;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hotel-card h3 {
+    margin-bottom: 10px;
+}
+
+.hotel-stars {
+    font-size: 20px;
+    color: #F59E0B;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hotel-address {
+    font-size: 14px;
+    color: #64748B;
+    margin-bottom: 18px;
+}
+
+.hotel-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hotel-features li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 10px;
+}
+
+.hotel-features li::before {
+    content: "•";
+    color: #0EA5A4;
+    position: absolute;
+    left: 0;
+}
+
+.meals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.meal-card {
+    background: #fff;
+    border: 1px solid #eef2f6;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+
+    transition: transform 0.2s ease;
+}
+
+.meal-card:hover {
+    transform: translateY(-3px);
+}
+
+
+.meal-header {
+    padding: 16px;
+    display: flex;
+    gap: 14px;
+    color: #fff;
+
+    border-radius: 14px 14px 0 0;
+
+    background: linear-gradient(135deg, #2D3748, #1F2937);
+}
+
+.meal-card.day-1 .meal-header {
+    background: linear-gradient(135deg, #0EA5A4, #14B8A6);
+}
+
+.meal-card.day-2 .meal-header {
+    background: linear-gradient(135deg, #3B82F6, #2563EB);
+}
+
+.meal-card.day-3 .meal-header {
+    background: linear-gradient(135deg, #F59E0B, #D97706);
+}
+
+.meal-num {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+
+    flex-shrink: 0;
+}
+
+.meal-city {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.meal-subtitle {
+    font-size: 12px;
+    opacity: 0.75;
+}
+
+
+.meal-body {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+
+.meal-item {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.meal-tag {
+    width: 78px;
+    min-width: 78px;
+    flex-shrink: 0;
+
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.breakfast { background: #6B7280; }
+.lunch { background: #4B5563; }
+.dinner { background: #374151; }
+.muted { background: #9CA3AF; }
+
+.meal-place {
+    font-weight: 600;
+    font-size: 14px;
+    color: #1F2937;
+}
+
+.meal-desc {
+    font-size: 13px;
+    color: #6B7280;
+}
+
+
+@media (max-width: 1024px) {
+    .meals-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .transport-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .transport-features {
+        grid-template-columns: 1fr;
+    }
+
+    .hotels-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.included-section {
+    padding: 50px 0 80px;
+}
+
+.included-card {
+    background: #F8FAFC;
+    border: 1px solid #E5EAF0;
+    border-radius: 16px;
+
+    padding: 28px 32px;
+
+    max-width: 100%;
+    margin: 0 auto;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+}
+
+.included-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1F2937;
+
+    margin-bottom: 18px;
+    line-height: 1.4;
+}
+
+
+.included-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    font-size: 16px;
+    color: #334155;
+}
+
+.included-list li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.included-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+
+    background: #0EA5A4;
+    opacity: 0.8;
+}
+
+.food-section {
+    padding: 50px 0 80px;
+}
+
+.food-section:nth-of-type(odd) {
+    background: #FFFFFF;
+}
+
+.food-section:nth-of-type(even) {
+    background: #F7FAFC;
+}
+
+.food-section h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 28px;
+    color: #1F2937;
+}
+
+.transport-card,
+.hotel-card,
+.meal-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.transport-card:hover,
+.hotel-card:hover,
+.meal-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+}
+
+.meal-card:nth-child(1) .meal-header {
+    background: linear-gradient(135deg, #0EA5A4, #14B8A6);
+}
+
+.meal-card:nth-child(2) .meal-header {
+    background: linear-gradient(135deg, #3B82F6, #2563EB);
+}
+
+.meal-card:nth-child(3) .meal-header {
+    background: linear-gradient(135deg, #F59E0B, #D97706);
+}
+
+.meal-body {
+    background: #FFFFFF;
+}
+
+.food-section + .food-section {
+    border-top: 1px solid #EEF2F6;
+}
